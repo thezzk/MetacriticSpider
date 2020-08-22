@@ -64,9 +64,14 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'MetacriticSpider.pipelines.MetacriticspiderPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    #'MetacriticSpider.pipelines.MetacriticspiderPipeline': 300,
+    #'scrapy.pipelines.files.FilesPipeline': 500,
+}
+#Image path
+IMAGES_STORE = './Image'
+#expire day
+IMAGES_EXPIRES = 90  #90days
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
@@ -88,3 +93,5 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+FILES_STORE = './Download'

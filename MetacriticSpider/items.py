@@ -17,7 +17,12 @@ class GameDetailItem(scrapy.Item):
     players = scrapy.Field()
     genre = scrapy.Field()
     otherPlatform = scrapy.Field()
-    #trailerUrl = scrapy.Field()
+    userRatesCnt = scrapy.Field()
+    imageUrl = scrapy.Field()
+    trailerUrl = scrapy.Field()
+    #imageLocalpath = scrapy.Field()
+    #file_urls = scrapy.Field()
+    #files = scrapy.Field()
 
 class MetacriticspiderItem(scrapy.Item):
     name = scrapy.Field()
