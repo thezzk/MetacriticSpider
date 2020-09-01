@@ -9,6 +9,12 @@ class MetacriticgamesSpider(scrapy.Spider):
     name = 'metacriticGames'
     allowed_domains = ['metacritic.com']
     start_urls = ['https://www.metacritic.com/browse/games/score/metascore/year/all/filtered?page=0']
+    
+    custom_settings = {
+        'ITEM_PIPELINES':{
+        }
+    }
+    
     #endPage = 4
     #curPage = 0
     urlIndex = 0

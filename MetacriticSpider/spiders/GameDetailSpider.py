@@ -10,6 +10,10 @@ from MetacriticSpider.items import GameDetailItem
 class GamedetailspiderSpider(scrapy.Spider):
     name = 'GameDetailSpider'
     allowed_domains = ['metacritic.com']
+    custom_settings = {
+        'ITEM_PIPELINES':{
+        }
+    }
     #start_urls = ""
     gameIndex = 0
     urlDataframe = {} 
@@ -67,6 +71,7 @@ class GamedetailspiderSpider(scrapy.Spider):
         item['userRatesCnt'] = userRatesCnt
         item['imageUrl'] = [imageUrl]
         item['trailerUrl'] = trailerUrl
+        item['gameId'] = self.gameIndex
         # if trailerUrl != None:
             # item['file_urls'] = [trailerUrl]
         # else:

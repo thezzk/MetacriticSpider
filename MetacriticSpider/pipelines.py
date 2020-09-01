@@ -7,7 +7,7 @@
 from scrapy.pipelines.images import ImagesPipeline
 from scrapy.exceptions import DropItem
 from scrapy import Request
-
+import pdb
 
 # class MetacriticspiderPipeline(object):
     # def process_item(self, item, spider):
@@ -24,5 +24,8 @@ class MetacriticspiderPipeline(ImagesPipeline):
         image_paths = [x['path'] for ok, x in results if ok]
         if not image_paths:
             raise DropItem("Item contains no images")
-        item['imageLocalpath'] = image_paths
+        l =list()
+        for p in image_paths:
+           l.append(p.split('/')[-1])
+        item['imageFileName'] = l
         return item

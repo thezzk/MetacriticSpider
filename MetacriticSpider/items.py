@@ -7,6 +7,11 @@
 
 import scrapy
 
+class GameImageItem(scrapy.Item):
+    gameId = scrapy.Field()
+    imageFileName = scrapy.Field()
+    imageUrl = scrapy.Field()
+
 class GameDetailItem(scrapy.Item):
     title = scrapy.Field()
     platform = scrapy.Field()
@@ -20,6 +25,7 @@ class GameDetailItem(scrapy.Item):
     userRatesCnt = scrapy.Field()
     imageUrl = scrapy.Field()
     trailerUrl = scrapy.Field()
+    gameId = scrapy.Field()
     #imageLocalpath = scrapy.Field()
     #file_urls = scrapy.Field()
     #files = scrapy.Field()
@@ -27,4 +33,3 @@ class GameDetailItem(scrapy.Item):
 class MetacriticspiderItem(scrapy.Item):
     name = scrapy.Field()
     url = scrapy.Field()
-    pass
