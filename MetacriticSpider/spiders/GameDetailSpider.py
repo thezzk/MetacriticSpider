@@ -14,7 +14,7 @@ class GamedetailspiderSpider(scrapy.Spider):
     gameIndex = 0
     urlDataframe = {} 
     def __init__(self):
-        self.urlDataframe = pd.read_csv('.\games.csv')
+        self.urlDataframe = pd.read_csv('./GameUrls.csv')
         #pdb.set_trace()
         self.start_urls = [self.urlDataframe.url[self.gameIndex]]
         super().__init__()
@@ -30,8 +30,10 @@ class GamedetailspiderSpider(scrapy.Spider):
         #description = ""
         description = descriptionPath.xpath('//*[@class="summary_detail product_summary"]/span[2]/span/text()').extract_first()
         #pdb.set_trace()
-        if description.strip() == "": #collapse item
+        if description == None or description.strip() == "": #collapse item or None
             description = descriptionPath.xpath('//*[@class="summary_detail product_summary"]/span[2]/span/span[2]/text()').extract_first()
+            if description == None:
+                description = ""
         
         metascore = response.xpath('//*[@id="main"]/div/div[1]/div[1]/div[3]')#/div/div/div[2]/div[1]/div[1]/div/div/a/div/span/text()
         metascore = metascore.xpath('//*[@class="metascore_w xlarge game positive"]/span/text()').extract_first()

@@ -1,0 +1,109 @@
+Genre,cnt,mergeto
+3D,30,x
+2D,117,x
+General,200,x
+PC-style RPG,13,x
+Other,1,x
+Parlor,1,x
+Console-style RPG,1,x
+4X,10,x
+Artillery,1,Strategy
+Wargame,2,
+WWII,2,wargame
+Combat,6,wargame
+Horror,1,Survival
+Board / Card Game,1,Strategy
+Government,1,strategy
+Matching,1,strategy
+MOBA,2,Strategy
+Tycoon,2,strategy
+Static,2,strategy
+Career,2,strategy
+Business / Tycoon,3,strategy
+Civilian,3,strategy
+Card Battle,5,strategy
+Management,6,strategy
+Command,6,strategy
+Tactical,20,strategy
+Tactics,25,strategy
+Boxing / Martial Arts,1,sports
+Biking,1,sports
+Exercise / Fitness,1,sports
+Motorcycle,1,sports
+Rally / Offroad,2,sports
+Ice Hockey,3,sports
+Golf,4,sports
+Skate / Skateboard,4,sports
+Football,4,sports
+Skateboarding,5,sports
+Pinball,6,sports
+Baseball,8,sports
+Basketball,9,sports
+Soccer,25,sports
+Alternative,3,sports
+Modern Jet,2,sim
+Simulation,49,sim
+Marine,1,sim
+Submarine,2,sim
+Civilian Plane,2,sim
+Small Spaceship,4,sim
+Light Gun,1,shooter
+Shoot-'Em-Up,26,shooter
+Futuristic,2,Sci-Fi
+Space,2,Sci-Fi
+Virtual,5,Sci-Fi
+Virtual Life,5,sim
+Horizontal,7,Platformer
+Scrolling,5,Platformer
+Vertical,5,Platformer
+Top-Down,14,platformer
+Rhythm,14,Music
+Street,2,Modern
+Rail,3,Modern
+GT / Street,5,Modern
+Compilation,32,Miscellaneous
+Stacking,3,Party / Minigame
+Party / Minigame,1,
+Point-and-Click,10,Party / Minigame
+Massively Multiplayer Online,7,Massively Multiplayer
+Visual Novel,5,linear
+Beat-'Em-Up,4,fighting
+Flight,5,fighting
+Formula One,2,Automobile
+Stock Car,6,automobile
+Driving,10,automobile
+Platformer,99,
+Sci-Fi,80,
+Arcade,89,
+Sandbox,9,
+Individual,10,
+Massively Multiplayer,11,
+Music,15,
+Survival,15,
+Puzzle,18,
+Linear,18,
+Third-Person,19,
+Traditional,19,
+Japanese-Style,21,
+Fighting,22,
+Real-Time,28,
+Western-Style,29,
+Open-World,35,
+Historic,40,
+Automobile,42,
+Turn-Based,43,
+Racing,44,
+Miscellaneous,45,
+Adventure,49,
+Team,49,
+Modern,54,
+Fantasy,58,
+Sim,59,
+Sports,59,
+Strategy,74,
+Action RPG,85,
+First-Person,107,
+Role-Playing,138,
+Action Adventure,139,
+Shooter,157,
+Action,281,
