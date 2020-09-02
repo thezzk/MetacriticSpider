@@ -30,7 +30,7 @@ for item in genreReduceDataframe.iloc:
 print(finalGenreLst)
 print(genreReduceDic)
 print(genreReduceDataframe)
-col = ['title'] + finalGenreLst
+col = ['gameId', 'title'] + finalGenreLst
 GenreStatDf = pd.DataFrame(columns=col)
 
 gameDetailDataframe = pd.read_csv('../GameDetail.csv')
@@ -49,7 +49,7 @@ for item in gameDetailDataframe.iloc:
                 if(finalGenreLst[index] == i):
                     genreFlagLst[index] = 1
     
-    genreFlagLst = [item.title] + genreFlagLst
+    genreFlagLst = [item.gameId, item.title] + genreFlagLst
     #pdb.set_trace()
     newDf = pd.DataFrame(data = [genreFlagLst], columns = col)
     GenreStatDf = GenreStatDf.append(newDf, ignore_index = True)
